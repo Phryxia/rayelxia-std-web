@@ -1,0 +1,20 @@
+{
+  "name": "server",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "tsx --tsconfig ./tsconfig.json ./src/index.ts",
+    "dev": "tsx watch --tsconfig ./tsconfig.json ./src/index.ts",
+    "generate-db": "npx drizzle-kit push"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "tsx": "^4.20.6"
+  },
+  "dependencies": {
+    "@fastify/cors": "^11.1.0",
+    "fastify": "^5.6.1",
+    "uuid": "^13.0.0"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "life-logger",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev:client": "npm --workspace=client run dev",
+    "test:client": "npm --workspace=client run test",
+    "dev:server": "npm --workspace=server run dev",
+    "generate-db": "npm --workspace=server run generate-db"
+  },
+  "license": "MIT",
+  "workspaces": [
+    "packages/client",
+    "packages/server"
+  ],
+  "devDependencies": {
+    "@eslint/js": "^9.36.0",
+    "eslint": "^9.37.0",
+    "eslint-plugin-import": "^2.32.0",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.3",
+    "utility-types": "^3.11.0",
+    "vitest": "^4.0.6"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3"
+  }
+}
