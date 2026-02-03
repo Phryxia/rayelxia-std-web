@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b ./tsconfig.app.json && vite build",
     "preview": "vite preview",
-    "test": "vitest"
+    "test": "vitest run",
+    "test-dev": "vitest"
   },
   "dependencies": {
     "@picocss/pico": "^2.1.1",

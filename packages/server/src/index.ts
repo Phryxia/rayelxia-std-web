@@ -2,6 +2,7 @@ import './env'
 
 import Fastify from 'fastify'
 import cors from '@fastify/cors'
+import { hello } from '@rayelxia/shared' // if you build to js, you must change this by relative path
 
 const fastify = Fastify({
   logger: true,
@@ -16,3 +17,5 @@ fastify.get('/', (req, res) => {
 })
 
 fastify.listen({ port: Number(process.env.VITE_SERVER_PORT) })
+
+console.log(hello())

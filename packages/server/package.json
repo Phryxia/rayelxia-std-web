@@ -6,6 +6,9 @@
   "scripts": {
     "start": "tsx --tsconfig ./tsconfig.json ./src/index.ts",
     "dev": "tsx watch --tsconfig ./tsconfig.json ./src/index.ts",
+    "build": "tsc -b ./tsconfig.build.json",
+    "test": "vitest run",
+    "test-dev": "vitest",
     "generate-db": "npx drizzle-kit push"
   },
   "devDependencies": {
@@ -13,6 +16,7 @@
     "tsx": "^4.20.6"
   },
   "dependencies": {
+    "@rayelxia/shared": "file:../shared",
     "@fastify/cors": "^11.1.0",
     "fastify": "^5.6.1",
     "uuid": "^13.0.0"

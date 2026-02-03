@@ -7,9 +7,6 @@
     "erasableSyntaxOnly": true,
     "verbatimModuleSyntax": true,
     "allowImportingTsExtensions": true,
-    "skipLibCheck": true,
-    "paths": {
-      "@shared/*": ["./packages/shared/*"]
-    }
+    "skipLibCheck": true
   }
 }
