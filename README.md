@@ -26,7 +26,29 @@ This project uses following preferences:
 - [fastify](https://github.com/fastify/fastify)
 - [tsx](https://github.com/privatenumber/tsx) runtime
 
-For your intersts, please checkout `package.json`
+For your interests, please checkout `package.json`
+
+# Github Page Deployment
+
+This repository has already equipped github page deployment configuration.
+
+There are two ways to serve this repository as github page.
+
+## Using Github Action
+
+1. (optional) Edit the target branch `.github/workflows/static.yml` (default: `main`)
+2. Go to your project's _Settings_ > _Pages_ and Set `Source` as `Github Actions`
+3. Push the branch or manually dispatch using button on _Actions_ tab
+
+## Using Branch
+
+1. Go to your project's _Settings_ > _Pages_ and set `Source` to `Deploy from Branch`, target directory to `/docs`
+2. (optional) Edit the target branch on _Pages_ and create that git branch on your local
+3. Set your working branch as targeted one
+4. **Remove `"docs"` from `.gitignore`**
+5. Run `npm run build-gh-page`
+6. Commit every changes in `/docs` directory
+7. Push the branch
 
 # Disclaimer
 
