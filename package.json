@@ -6,6 +6,7 @@
     "dev:client": "npm --workspace=client run dev",
     "dev:server": "npm --workspace=server run dev",
     "build": "npm --workspace=client run build && npm --workspace=server run build",
+    "build-gh-page": "npm --workspace=client run build -- --outDir ../../docs --emptyOutDir",
     "test": "npm --workspace=client run test && npm --workspace=server run test",
     "generate-db": "npm --workspace=server run generate-db"
   },
